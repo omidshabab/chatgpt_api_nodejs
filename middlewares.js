@@ -2,15 +2,13 @@ const HTTP_STATUS = require("./status");
 
 const verifyApiKey = async (req, res, next) => {
     try{
-        //
         let apikey = req.header("Authorization");
 
         if (!apikey) {
         return res.status(403).send("Send your OpenAI API Key through header");
         }
 
-        const verified = 
-        req.user = verified;
+        //
         
         next()
     } catch (err) {
@@ -19,4 +17,8 @@ const verifyApiKey = async (req, res, next) => {
             data: err.message,
           });
     }
+}
+
+module.exports = {
+    verifyApiKey,
 }
