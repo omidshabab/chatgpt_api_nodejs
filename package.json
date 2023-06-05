@@ -7,13 +7,19 @@
     "start": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": [
+    "openai",
+    "chatgpt",
+    "api",
+    "nodejs"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
-    "nodemon": "^2.0.21"
+    "nodemon": "^2.0.21",
+    "request": "^2.88.2"
   }
 }
