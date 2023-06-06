@@ -5,6 +5,7 @@ const {
     
     // READ
     listModels,
+    retrieveModel,
 
     // UPDATE
 
@@ -19,6 +20,7 @@ router.post("/completions", createCompletion)
 
 // READ
 router.get("/models", listModels)
+router.get("/models/:model", retrieveModel)
 
 // UPDATE
 
